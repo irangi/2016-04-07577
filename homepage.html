@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+header{ 
+      background-color:black;
+      text-align:center;}
+h1{
+     color:grey;
+     text-align:centre;}
+h2{
+     color:grey;
+     text-align:centre;}
+
+body {font-family: "Lato", sans-serif;
+     
+      }
+
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color:grey;
+    
+} 
+  strong{
+color:grey:}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    
+}
+</style>
+</head>
+<body>
+<header>
+<h1 style="text-align:center">HESLB STUDENT'S INFORMATION SYSTEM</h1>
+<img src="heslb.png" alt="heslb logo" height="150" width="150">
+</header>
+
+<div class="tab">
+  <button class="active" autoclick="openTab(event, 'Home')" >Home</button>
+<button class="tablinks" onclick="openTab(event, 'ContactUs')">Contact Us</button>
+<button class="tablinks" onclick="openTab(event,'AboutUs')">About Us</button>
+<p style="text-align:right"><input type="button" value="logout"></P>
+</div>
+
+ <p>Welcome to <strong style="color:grey">HESLB STUDENT'S INFORMATION SYSTEM</strong>,where registered students can get their information such as <strong>loan signing history</strong>,<strong>bank information</strong>,<strong>signing loan</strong>,also our <strong>contacts<strong> incase of any probleam or feedback.</p>
+<p>you can access HESLB STUDENT'S INFORMATION STSTEM by following the following links:</p>
+
+<p><a href="studentinformation.html">Student information</a></p>
+
+<p><a href="loanhistory.html">Loan history</a></p>
+<p><a href="bankinfo.html">Bank Information</a></p>
+
+
+<p><a href="sign.html">Sign Loan</a></p>
+
+
+<div id="ContactUs" class="tabcontent">
+<h2 style="color:grey;text-align:center;"><u>Contact Us</u><h2>
+ 
+<p>If you have any ideas, comment, feedback or questions, please feel free to contact us using our contact details below:-</p>
+<P><strong>Postal Address:</strong><br>	Executive Director</p>
+ 	<p>Higher Education Students' Loans Board,</p>
+ 	<p>Plot No. 8, Block No. 46, Sam Nujoma Road, Mwenge,</p>
+ 	<p>P. O. Box 76068</p>
+ 	<p>Dar es Salaam.</p>
+ 	<p>Tanzania</p></br>
+<p>Phone	+255-22-2772432/3</p>
+<p>Fax	+255-22-2700286</p>
+<p>Emailinfo@heslb.go.tz</p>
+<p>Website	</p>
+<p>http://www.heslb.go.tz</p></br>
+
+<p>Dodoma Zonal Office</p> 
+<p>NCC Link Area Along Makori Road,</p>
+<p>Plot No. 10,</p>
+<p>Ground Floor,</p>
+<p>P.O. Box 984,</P> 
+<p>Dodoma.</p></br>
+
+<P>Zanzibar Zonal Office</p> 
+<p>ZSTC Building,</p>
+<p>Kinazini Area, Malawi Road,</p>
+<p>P.O. Box 900, </p>
+<p>Zanzibar.</p></br>
+</p>
+</div>
+<div id="AboutUs" class="tabcontent">
+<h2 style="color:grey;text-align:center;"><u>About Us</u><h2>
+
+<p>Higher Education Students' Loans Board was established by Act No. 9 of 2004, inaugurated by the Hon. Minister for Higher Education, Science and Technology on the 30th March 2005 and became operational in July 2005. The objective of the Board is to assist, on a loan basis, needy students who secure admission in accredited higher learning institutions, but who have no economic power to pay for the costs of their education. The Board is also entrusted with the task of collecting due loans from previous loan beneficiaries in order to have a revolving fund in place so as to make the Board sustainable.
+<br>
+<strong>Mission:</strong>To be a centre of excellence for provision of loans to needy and eligible Tanzanian students of higher learning institutions.
+<br>
+<strong>Vision:</strong>
+
+To put in place a well managed and sustained revolving students' loan fund to enhance access to higher education needy and eligible Tanzanian students.<br>
+
+Core Values<br>
+<ul>
+
+<li>team work</li>
+<li>transparency</li>
+<li>accountability</li>
+<li>commitment</li>
+<li>integrity</li>
+<li>equity</li>
+</p>
+
+<script>
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
